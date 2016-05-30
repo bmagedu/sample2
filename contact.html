@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="copyright" content="Nguyen Huy Hung" />
+    <meta name="author" content="Nguyen Huy Hung" />
+    <meta name="description" content="web front end design; training for individual and corporate; software development" >
+    <meta name="keywords" content="web. front end, training, individual, corporate, software" >
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Using google fonts -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto Condensed" />
+    <!-- Using awesome-font -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="main_nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./expericence.html">My Experience</a></li>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./contact.html" class="link_button" target="_blank">Contact Me</a></li>
+            </ul>
+        </nav>
+        <h1>
+            Contact Me
+        </h1>
+        <h3>
+            Select your convenient way to contact me
+        </h3>
+    </header>
+    
+    <!-- Main body content -->
+    <section id="contact_wrapper">
+        <section id="contact_form">
+            <form action="/" method="post" autocomplete="off">
+                <fieldset id="basic_info">
+                    <legend><span class="number">1</span>Basic Info</legend>
+                    
+                    <label for="name">Your Name:</label>
+                    <input required type="text" id="name" name="name" placeholder="Input your full name here" maxlength="30"/>
+                    
+                    <label for="email">Email:</label>
+                    <input required type="email" id="email" name="email" placeholder="email@address.com" >
+                    
+                    <label>Your are:</label>
+                    <input checked type="radio" name="you_are" id="individual"> <label class="light" for="individual">Individual</label>
+                    <input type="radio" name="you_are" id="corporate"> <label class="light" for="corporate">Corporate</label>
+                    
+                    <label for="why_contact">Why do you contact me?</label>
+                    <textarea id="why_contact" name="why_contact" cols="50" rows="10"></textarea>
+                </fieldset>
+                
+                <fieldset id="about_you">
+                    <legend><span class="number">2</span> About You</legend>
+                    
+                    <label>What is your website?</label>
+                    <input type="url" id="your_url" name="your_url" >
+                    <label for="start_date">What are areas of your project?</label>
+                    <input type="checkbox" id="healthcare" value="healthcare" name="healthcare"><label class="light" for="healthcare">Health Care</label>
+                    
+                    <input type="checkbox" id="finance" value="finance" name="finance"><label class="light" for="finance">Finance</label>
+                    
+                    <input type="checkbox" id="edu" value="edu" name="edu"><label class="light" for="edu">Education</label>
+                    
+                    <label>How many people in your company?</label>
+                    <select>
+                        <option selected>1 - 10</option>
+                        <option>11 - 20</option>
+                        <option>21 - 50</option>
+                        <option>51 - 100</option>
+                        <option>More than 100</option>
+                    </select>
+                    
+                    <label>What is your role?</label>
+                    <select>
+                        <optgroup label="Web">
+                            <option>Web Developer</option>
+                            <option>Web Designer</option>
+                            <option>Full Stack Web Developer</option>
+                        </optgroup>
+                        <optgroup label="Architect">
+                            <option>Software Architect</option>
+                            <option>Database Architect</option>
+                            <option>System Architect</option>
+                        </optgroup>
+                        <option>Other</option>
+                    </select>
+                </fieldset>
+                <button type="submit">Contact me NOW</button>
+                <button type="reset">Clear</button>
+            </form>
+            <address id="call_me">
+                <span><i class="fa fa-phone" aria-hidden="true"></i> 0908-123-4567</span>
+            </address>
+        </section>
+    </section>
+    
+    <aside id="left_fixed_nav">
+        <ul>
+            <li><a href="#basic_info" class="google_icon"><i class="fa fa-google-plus" aria-hidden="true"></i> Google +</a>
+        <li><a href="#about_you" class="facebook-icon"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+        <li><a href="#call_me" class="twitter-icon"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+        </ul>
+    </aside>
+    
+    <!-- Main Footer -->
+    <footer>
+        <div id="connect_me">
+            <a href="#" class="google_icon"><i class="fa fa-google-plus" aria-hidden="true"></i> Google</a>
+            
+            <a href="#" class="facebook-icon"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook </a>
+            
+                <a href="#" class="twitter-icon"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter </a>
+        </div>
+        <div id="copyright_info">
+            &copy; 2016 - Nguyễn Huy Hùng
+        </div>
+    </footer>
+</body>
+</html>
